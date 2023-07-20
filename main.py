@@ -66,7 +66,7 @@ def get_coordinates_for_course(course):
     return data.get(course, "Invalid course")
 
 defcalculate_discriminant_score(coefficients, release_speeed,plate_x,plate_z,pfx_x,pfx_z)
-    score = (coefficients ["release_speed"] * release_speed + coefficients ["plate_×"] * plate_x + coefficients ["plate_z"] * plate_z + coefficients ["pfx_×"] * pfx_x + coefficients ["pfx_z"] * pfx_z + coefficients ["constant"])
+    score = (coefficients["release_speed"] * release_speed + coefficients["plate_×"] * plate_x + coefficients["plate_z"] * plate_z + coefficients["pfx_×"] * pfx_x + coefficients["pfx_z"] * pfx_z + coefficients["constant"])
     score=1/(1+math.exp(-score))*100
     score = 100-score
     return round (score, 1)
