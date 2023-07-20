@@ -65,6 +65,12 @@ def get_coordinates_for_course(course):
     # 指定されたコースに対応するデータを返す
     return data.get(course, "Invalid course")
 
+defcalculate_discriminant_score(coefficients, release_speeed,plate_x,plate_y,pfx_x,pfx_y)
+    score = (coefficients ["release_speed"] * release_speed + coefficients ["plate_×"] * plate_x + coefficients ["plate_z"] * plate_z + coefficients ["pfx_×"] * pfx_x + coefficients ["pfx_z"] * pfx_z + coefficients ["constant"])
+    score=1/(1+math.exp(-score))*100
+    score = 100-score
+    return round (score, 1)
+
 image_path = "my_image.jpg"
 st.image(image_path, use_column_width=True)
 
