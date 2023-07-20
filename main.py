@@ -70,12 +70,12 @@ st.image(image_path, use_column_width=True)
 
 # タイトルと説明
 st.title("大谷翔平を打ち取れ!")
-st.write("以下の情報を入力して大谷翔平を打ち取る確率を最大にした人が優勝です:")
+st.write("以下の情報を入力して大谷翔平に打たれない確率を最大にした人が優勝です:")
 
 # 入力部分
 strike = st.number_input("ストライクカウント", 0, 2, 1)
 speed = st.number_input("ボールの速度 (km/h)", 100.0, 180.0, 145.0)
-zone = st.selectbox("Zone", ["内角高め", "真ん中高め", "外角高め", "内角真ん中", "ど真ん中", "外角真ん中", "内角低め", "真ん中低め", "外角低め"])
+zone = st.selectbox("コース", ["ど真ん中", "真ん中高め", "外角高め", "内角真ん中", "ど真ん中", "外角真ん中", "内角低め", "真ん中低め", "外角低め"])
 balltype = st.selectbox("ボールの種類", ["4シーム", "2シーム", "スライダー", "カーブ", "チェンジアップ", "カットボール", "スプリット"])
 
 balltypes = get_movement_for_pitch(balltype)
