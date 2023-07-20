@@ -69,8 +69,8 @@ image_path = "my_image.jpg"
 st.image(image_path, use_column_width=True)
 
 # タイトルと説明
-st.title("大谷翔平に打たれない確率の計算")
-st.write("以下の情報を入力してください:")
+st.title("大谷翔平を打ち取れ!")
+st.write("以下の情報を入力して大谷翔平を打ち取る確率を最大にした人が優勝です:")
 
 # 入力部分
 strike = st.number_input("ストライクカウント", 0, 2, 1)
